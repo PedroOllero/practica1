@@ -1,0 +1,140 @@
+html {
+  font-family: "Montserrat";
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.header__menu-icon {
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav__section {
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.5;
+  transition: all 400ms linear;
+}
+
+.nav__section:hover {
+  opacity: 1;
+}
+
+.header__functions {
+  width: 200px;
+  display: flex;
+  display: row;
+  justify-content: space-between;
+}
+
+.main {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.title__text {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.main__collection {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.collection__article {
+  border-radius: 10px;
+}
+
+.article__img {
+  border-radius: 10px;
+}
+
+.article__info {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__text {
+  font-size: 16px;
+}
+
+.info__price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer {
+  min-height: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: black;
+  padding: 10px 50px;
+}
+
+.contact__text {
+  margin-left: 10px;
+  color: white;
+}
+
+.contact__icon {
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.footer__contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 150;
+}
+
+@media (max-width: 920px) {
+  .footer__contact {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+  .header__nav {
+    opacity: 0;
+  }
+  .header__functions {
+    opacity: 0;
+  }
+  .header__menu-icon {
+    margin-left: 50%;
+  }
+}
